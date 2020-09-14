@@ -5,6 +5,8 @@
 
 void add_contact();
 void list_contacts();
+void update_contact();
+void delete_contact();
 
 int main()
 {
@@ -27,8 +29,10 @@ int main()
       add_contact();
       break;
     case 2:
+      delete_contact();
       break;
     case 3:
+      update_contact();
       break;
     case 4:
       list_contacts();
@@ -55,15 +59,25 @@ void add_contact()
   printf("Telefone: ");
   scanf("%c", &temp);
   scanf("%[^\n]", new_contact.phone);
-
-  printf("Id: %d\n", new_contact.id); 
-  printf("Name: %s\n", new_contact.name); 
-  printf("Email: %s\n", new_contact.email); 
-  printf("Phone: %s\n", new_contact.phone);
+  scanf("%c", &temp);
 
   insert(&new_contact);
 }
 
 void list_contacts() {
   list();
+}
+
+void update_contact() {
+  int id = 0;
+  printf("Informe o Id do contato a ser alterado: \n");
+  scanf("%d", &id);
+  update(id);
+}
+
+void delete_contact() {
+  int id = 0;
+  printf("Informe o Id do contato a ser removido: \n");
+  scanf("%d", &id);
+  delete(id);
 }

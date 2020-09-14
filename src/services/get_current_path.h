@@ -1,3 +1,5 @@
+#ifndef GET_CURRENT_PATH_H
+#define GET_CURRENT_PATH_H
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -15,3 +17,4 @@ char* get_current_path() {
       return cwd;
   }
 }
+#endif
