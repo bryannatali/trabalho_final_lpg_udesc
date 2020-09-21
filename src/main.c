@@ -43,6 +43,8 @@ int main()
     case 4:
       list_contacts();
       break;
+    default:
+      printf("Opção inválida!\n");
     }
   }
 
