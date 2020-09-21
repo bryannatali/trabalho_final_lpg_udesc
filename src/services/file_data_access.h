@@ -60,10 +60,10 @@ void list()
       break;
     }
 
-    printf("id: %d\n", readed_contact.id);
-    printf("name: %s\n", readed_contact.name);
-    printf("email: %s\n", readed_contact.email);
-    printf("phone: %s\n", readed_contact.phone);
+    printf("Id: %d\n", readed_contact.id);
+    printf("Nome: %s\n", readed_contact.name);
+    printf("Email: %s\n", readed_contact.email);
+    printf("Telefone: %s\n", readed_contact.phone);
   }
 
   fclose(fptr);

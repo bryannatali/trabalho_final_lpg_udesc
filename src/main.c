@@ -1,3 +1,9 @@
+/**
+ * EQUIPE: BRYAN GUSTAVO NATALI, HENRIQUE PAAS e JOSÉ VINICIUS
+ * 
+ * 
+ * */
+
 #include <stdio.h>
 #include <string.h>
 #include "services/file_data_access.h"
@@ -64,20 +70,23 @@ void add_contact()
   insert(&new_contact);
 }
 
-void list_contacts() {
+void list_contacts()
+{
   list();
 }
 
-void update_contact() {
+void update_contact()
+{
   int id = 0;
   printf("Informe o Id do contato a ser alterado: \n");
   scanf("%d", &id);
   update(id);
 }
 
-void delete_contact() {
+void delete_contact()
+{
   int id = 0;
   printf("Informe o Id do contato a ser removido: \n");
   scanf("%d", &id);
-  delete(id);
+  delete (id);
 }
